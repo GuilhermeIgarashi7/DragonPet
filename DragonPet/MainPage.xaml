@@ -5,6 +5,40 @@
              Shell.NavBarIsVisible="False"
              BackgroundColor="Black">
 
+    <Grid>
+                <Image Source="banguela.jpg"
+                    Aspect="AspectFill"/>
+                
+            <VerticalStackLayout
+                VerticalOptions="Start"
+                Spacing="10"
+                Margin="15,0,15,40">
 
+                <Frame x:Name="frameStats"
+                    BackgroundColor="#366967"
+                    CornerRadius="25"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Margin="20">
 
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40"/> 
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                </Grid>  
+                </Frame>
+
+            
+            
+            
+            </VerticalStackLayout>
+    </Grid>
 </ContentPage>
