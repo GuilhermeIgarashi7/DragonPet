@@ -39,13 +39,24 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="70"/>
-                    <RowDefinition Height="50"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
             </Grid>  
             </Frame>
 
             <Grid>
+                <Button Text="u"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        HeightRequest="50"
+                        CornerRadius="25"
+                        BackgroundColor="#366967"
+                        TextColor="Black"
+                        FontFamily="Arrows"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        Grid.Row="0"
+                        Grid.Column="2"/>
                 <Button Text="F"
                         BorderColor="Black"
                         BorderWidth="1"
@@ -53,9 +64,10 @@
                         CornerRadius="25"
                         BackgroundColor="#366967"
                         TextColor="Black"
+                        FontFamily="Food"
                         FontSize="18"
                         FontAttributes="Bold"
-                        Grid.Row="0"
+                        Grid.Row="1"
                         Grid.Column="2"/>
                 <Button Text="T"
                         BorderColor="Black"
@@ -66,7 +78,7 @@
                         TextColor="Black"
                         FontSize="18"
                         FontAttributes="Bold"
-                        Grid.Row="1"
+                        Grid.Row="2"
                         Grid.Column="2"/>
                 <Button Text="S"
                         BorderColor="Black"
@@ -77,7 +89,7 @@
                         TextColor="Black"
                         FontSize="18"
                         FontAttributes="Bold"
-                        Grid.Row="2"
+                        Grid.Row="3"
                         Grid.Column="2"/>
 
                 <Grid.ColumnDefinitions>
@@ -89,7 +101,10 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="70"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="70"/>
                     <RowDefinition Height="*"/>
+
                 </Grid.RowDefinitions>
             </Grid>  
 
