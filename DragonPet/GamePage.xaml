@@ -43,21 +43,22 @@
                              Grid.Column="1"/>
                 <ProgressBar x:Name="ThistBar"
                              Progress="0.5"
-                             ProgressColor="#35BBC0"
+                             ProgressColor="#C550E6"
                              Grid.Row="1"
                              Grid.Column="1"/>
                 <ProgressBar x:Name="HappinessBar"
                              Progress="0.5"
-                             ProgressColor="#C550E6"
+                             ProgressColor="#35BBC0"
                              Grid.Row="2"
                              Grid.Column="1"/>
             </Grid>
         </Frame>
     
 
-    <HorizontalStackLayout HorizontalOptions="End"
-                           VerticalOptions="Center"
-                           Grid.Row="1">
+    <HorizontalStackLayout 
+        HorizontalOptions="End"
+        VerticalOptions="Center"
+        Grid.Row="1">
         <Label x:Name="DragonName"
                TextColor="Black"
                Margin="5"

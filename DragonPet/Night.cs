@@ -1,8 +1,8 @@
 namespace DragonPet;
 
-public class Banguela : DragonFather
+public class Night : DragonFather
 {
-    public Banguela() : base()
+    public Night() : base()
     {
         hungry=0.1;
         thirst=0.4;

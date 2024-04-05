@@ -1,8 +1,8 @@
 namespace DragonPet;
 
-public class Violet : DragonFather
+public class Purple : DragonFather
 {
-    public Violet() : base()
+    public Purple() : base()
     {
         hungry=0.6;
         thirst=0.4;
