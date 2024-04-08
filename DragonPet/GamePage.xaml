@@ -93,6 +93,7 @@
                     FontAttributes="Bold"
                     Grid.Row="0"/>
             <Button Text="F"
+                    Clicked="buttonHungryClicked"
                     BorderColor="Black"
                     BorderWidth="1"
                     HeightRequest="40"
@@ -104,6 +105,7 @@
                     FontAttributes="Bold"
                     Grid.Row="1"/>
             <Button Text="&#xf118;"
+                    Clicked="buttonThirstClicked"
                     BorderColor="Black"
                     BorderWidth="1"
                     HeightRequest="40"
@@ -114,6 +116,7 @@
                     FontFamily="Font2"
                     Grid.Row="2"/>
             <Button Text="&#xe4f5;"
+                    Clicked="buttonHappinessClicked"
                     BorderColor="Black"
                     BorderWidth="1"
                     HeightRequest="40"
@@ -134,20 +137,6 @@
                 Grid.Row="2"
                 VerticalOptions="End"
                 HorizontalOptions="Center"/>
-                <Button Text="v"
-                    Clicked="change"
-                    BorderColor="Black"
-                    BorderWidth="1"
-                    HeightRequest="50"
-                    CornerRadius="25"
-                    BackgroundColor="#929c9d"
-                    TextColor="Black"
-                    FontFamily="Arrows"
-                    FontSize="12"
-                    FontAttributes="Bold"
-                    HorizontalOptions="End"
-                    VerticalOptions="End"
-                    Grid.Row="2"
-/>
+
     </Grid>
 </ContentPage>

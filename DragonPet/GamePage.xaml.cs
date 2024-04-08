@@ -11,8 +11,14 @@ public partial class GamePage : ContentPage
     {
         InitializeComponent();
         current = Snow;
+        DragonImage.Source = current.GetDragonDesign();
+        HungryBar.Progress = current.GetHungry();
+        ThistBar.Progress = current.GetThirst();
+        HappinessBar.Progress = current.GetHappiness();
+
     }
 
+//------------------------------------------------------------------------------------------------
 void buttonChangeClicked(object sender, EventArgs args)
     {
         if(current==Snow)
@@ -28,17 +34,35 @@ void buttonChangeClicked(object sender, EventArgs args)
                 current=Snow;
             }
             DragonImage.Source=current.GetDragonDesign();
-    }
-void buttonHungryClicked(object sender, EventArgs args)
-    {
-        current.SetHungry(current.GetHungry()+0.1);
+            HungryBar.Progress = current.GetHungry();
+            ThistBar.Progress = current.GetThirst();
+            HappinessBar.Progress = current.GetHappiness();
 
     }
-		private void change(object sender, EventArgs args)
- 		 {
-				if (Application.Current != null)
-				Application.Current.MainPage = new MainPage();
-			}
-	  
+//--------------------------------------------------------------------------------------------
+    void ProgressConfig()
+        {
+            HungryBar.Progress = current.GetHungry();
+            ThistBar.Progress = current.GetThirst();
+            HappinessBar.Progress = current.GetHappiness();
+        }
+//---------------------------------------------------------------------------------------------
+    void buttonHungryClicked(object sender, EventArgs args)
+        {
+            current.SetHungry(current.GetHungry()+0.1);
+            ProgressConfig();
+        }
+    void buttonThirstClicked(object sender, EventArgs args)
+        {
+            current.SetThirst(current.GetThirst()+0.1);
+            ProgressConfig();
+        }
+    void buttonHappinessClicked(object sender, EventArgs args)
+        {
+            current.SetHappiness(current.GetHappiness()+0.1);
+            ProgressConfig();
+        }
+//-----------------------------------------------------------------------------
+
  
 }
