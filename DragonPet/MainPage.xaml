@@ -24,9 +24,74 @@
             BackgroundColor="#8874BD"
             Margin="0,0,0,10"
             FontSize="20"/>
+        <Button
+            Text="Sobre"
+            Clicked="OpenAbout"
+            HeightRequest="50"
+            CornerRadius="25"
+            BackgroundColor="#8874BD"
+            Margin="0,0,0,10"
+            FontSize="20"/>
+        </VerticalStackLayout>    
 
 
-</VerticalStackLayout>    
+
+          <Frame x:Name="frameAbout"
+                IsVisible="false"
+                Margin="10"
+                BackgroundColor="#8874BD"
+                CornerRadius="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill">
+
+                 <Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="90"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+       
+        <Label  Text="Sobre"
+                TextColor="White"
+                Margin="20"
+                FontSize="40"
+                FontFamily="KGHAPPY"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0"/>
+
+    <ScrollView Grid.Row="1">
+            
+            <Label 
+                Text="Jogo Desenvolvido pelos Alunos Guilherme Igarashi e Matheus Venancio. O jogo desenvolvido no intuito de concliur o trabalho descrito pelo professor Thiago Macedo "
+                CharacterSpacing="1"
+                LineHeight="1.5"
+                TextColor="White"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="20"
+                FontFamily="CaviarDreams"/>
+      
+    </ScrollView>
+
+
+        <Button 
+            Text="Voltar"
+            Clicked="BackAbout"
+            HeightRequest="50"
+            CornerRadius="25"
+            BackgroundColor="#9876f5"
+            Margin="0,0,0,10"
+            FontSize="18"
+            FontFamily="KGHAPPY"
+            Grid.Row="2"/>  
+       
+     </Grid>
+    </Frame>
+     
+
+
+
 
 
 </Grid>

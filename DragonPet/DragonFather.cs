@@ -5,7 +5,7 @@ namespace DragonPet;
         protected double hungry;
         protected double thirst;
         protected double happiness;
-    
+
 //---------------------------------------------------------------------------------------------------
     public DragonFather()
     {
@@ -14,19 +14,20 @@ namespace DragonPet;
         happiness = 0.1;
     }
 //----------------------------------------------------------------------------------------------------
-    public void SetHungry(double f)
+    public void SetHungry(double h)
     {
-        hungry = f;
+        hungry = h;
     }
 
     public void SetThirst(double t)
     {
         thirst = t;
     }
-    public void SetHappiness(double h)
+    public void SetHappiness(double ha)
     {
-        happiness = h;
+        happiness = ha;
     }
+    //------------------------------------------------------------------------------------------------------
     public double GetHungry()
     {
         return hungry;
@@ -46,4 +47,5 @@ namespace DragonPet;
     {
         return DragonDesign;
     }
+    //------------------------------------------------------------------------------------------------------------
 }

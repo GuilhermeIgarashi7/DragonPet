@@ -43,22 +43,21 @@
                              Grid.Column="1"/>
                 <ProgressBar x:Name="ThistBar"
                              Progress="0.5"
-                             ProgressColor="#C550E6"
+                             ProgressColor="#35BBC0"
                              Grid.Row="1"
                              Grid.Column="1"/>
                 <ProgressBar x:Name="HappinessBar"
                              Progress="0.5"
-                             ProgressColor="#35BBC0"
+                             ProgressColor="#C550E6"
                              Grid.Row="2"
                              Grid.Column="1"/>
             </Grid>
         </Frame>
     
 
-    <HorizontalStackLayout 
-        HorizontalOptions="End"
-        VerticalOptions="Center"
-        Grid.Row="1">
+    <HorizontalStackLayout HorizontalOptions="End"
+                           VerticalOptions="Center"
+                           Grid.Row="1">
         <Label x:Name="DragonName"
                TextColor="Black"
                Margin="5"
@@ -77,9 +76,66 @@
                         <RowDefinition Height="60"/>
                         <RowDefinition Height="60"/>
                         <RowDefinition Height="60"/>
-                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="60"/>         
+                        <RowDefinition Height="*"/>
+
                     </Grid.RowDefinitions>
             <Button Text="u"
+                    Clicked="buttonChangeClicked"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    HeightRequest="40"
+                    CornerRadius="20"
+                    BackgroundColor="#929c9d"
+                    TextColor="Black"
+                    FontFamily="Arrows"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    Grid.Row="0"/>
+            <Button Text="F"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    HeightRequest="40"
+                    CornerRadius="20"
+                    BackgroundColor="#929c9d"
+                    TextColor="Black"
+                    FontFamily="Food"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Grid.Row="1"/>
+            <Button Text="&#xf118;"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    HeightRequest="40"
+                    CornerRadius="20"
+                    BackgroundColor="#929c9d"
+                    TextColor="Black"
+                    FontSize="19"
+                    FontFamily="Font2"
+                    Grid.Row="2"/>
+            <Button Text="&#xe4f5;"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    HeightRequest="40"
+                    CornerRadius="20"
+                    BackgroundColor="#929c9d"
+                    TextColor="Black"
+                    FontFamily="Font2"
+                    FontSize="20"
+                    Grid.Row="3"/>
+            
+
+            </Grid>
+        </Frame>
+        
+    </HorizontalStackLayout>
+
+            <Image x:Name="DragonImage"
+                Grid.Row="2"
+                VerticalOptions="End"
+                HorizontalOptions="Center"/>
+                <Button Text="v"
+                    Clicked="change"
                     BorderColor="Black"
                     BorderWidth="1"
                     HeightRequest="50"
@@ -87,50 +143,11 @@
                     BackgroundColor="#929c9d"
                     TextColor="Black"
                     FontFamily="Arrows"
-                    FontSize="18"
+                    FontSize="12"
                     FontAttributes="Bold"
-                    Grid.Row="0"/>
-            <Button Text="F"
-                    BorderColor="Black"
-                    BorderWidth="1"
-                    HeightRequest="50"
-                    CornerRadius="25"
-                    BackgroundColor="#929c9d"
-                    TextColor="Black"
-                    FontFamily="Food"
-                    FontSize="18"
-                    FontAttributes="Bold"
-                    Grid.Row="1"/>
-            <Button Text="&#xf118;"
-                    BorderColor="Black"
-                    BorderWidth="1"
-                    HeightRequest="50"
-                    CornerRadius="25"
-                    BackgroundColor="#929c9d"
-                    TextColor="Black"
-                    FontSize="18"
-                    FontFamily="Font2"
-                    FontAttributes="Bold"
-                    Grid.Row="2"/>
-            <Button Text="&#xe4f5;"
-                    BorderColor="Black"
-                    BorderWidth="1"
-                    HeightRequest="50"
-                    CornerRadius="25"
-                    BackgroundColor="#929c9d"
-                    TextColor="Black"
-                    FontFamily="Font2"
-                    FontSize="18"
-                    FontAttributes="Bold"
-                    Grid.Row="3"/>
-
-            </Grid>
-        </Frame>
-    </HorizontalStackLayout>
-
-            <Image x:Name="DragonImage"
-                Grid.Row="2"
-                VerticalOptions="End"
-                HorizontalOptions="Center"/>
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    Grid.Row="2"
+/>
     </Grid>
 </ContentPage>
