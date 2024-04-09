@@ -13,8 +13,13 @@ public partial class GamePage : ContentPage
         current = Snow;
         DragonImage.Source = current.GetDragonDesign();
         HungryBar.Progress = current.GetHungry();
-        ThistBar.Progress = current.GetThirst();
+        ThirstBar.Progress = current.GetThirst();
         HappinessBar.Progress = current.GetHappiness();
+
+        var timer = Application.Current.Dispatcher.CreateTimer();
+		timer.Interval = TimeSpan.FromSeconds(1);
+		timer.Tick += (s, e) => DownGradeBar();
+		timer.Start();
 
     }
 
@@ -35,7 +40,7 @@ void buttonChangeClicked(object sender, EventArgs args)
             }
             DragonImage.Source=current.GetDragonDesign();
             HungryBar.Progress = current.GetHungry();
-            ThistBar.Progress = current.GetThirst();
+            ThirstBar.Progress = current.GetThirst();
             HappinessBar.Progress = current.GetHappiness();
 
     }
@@ -43,7 +48,7 @@ void buttonChangeClicked(object sender, EventArgs args)
     void ProgressConfig()
         {
             HungryBar.Progress = current.GetHungry();
-            ThistBar.Progress = current.GetThirst();
+            ThirstBar.Progress = current.GetThirst();
             HappinessBar.Progress = current.GetHappiness();
         }
 //---------------------------------------------------------------------------------------------
@@ -63,6 +68,21 @@ void buttonChangeClicked(object sender, EventArgs args)
             ProgressConfig();
         }
 //-----------------------------------------------------------------------------
+    void DownGradeBar()
+        {
+            current.SetHungry(current.GetHungry() - 0.001);
+            HungryBar.Progress = current.GetHungry();
 
+            current.SetThirst(current.GetThirst() - 0.001);
+            ThirstBar.Progress = current.GetThirst();
+
+            current.SetHappiness(current.GetHappiness() - 0.001);
+            HappinessBar.Progress = current.GetHappiness();
+
+            Snow.SetHungry(Snow.GetHungry() - 0.001);
+            Snow.SetThirst(Snow.GetThirst() - 0.001);
+            Snow.SetHappiness(Snow.GetHappiness() - 0.001);
+
+        }
  
 }

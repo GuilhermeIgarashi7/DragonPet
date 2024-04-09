@@ -41,7 +41,7 @@
                              Progress="0.5"
                              ProgressColor="#640101"
                              Grid.Column="1"/>
-                <ProgressBar x:Name="ThistBar"
+                <ProgressBar x:Name="ThirstBar"
                              Progress="0.5"
                              ProgressColor="#35BBC0"
                              Grid.Row="1"

@@ -16,29 +16,32 @@ namespace DragonPet;
 //----------------------------------------------------------------------------------------------------
     public void SetHungry(double h)
     {
-        hungry = h;
             if(h<0)
                 hungry = 0;
             else if (h>1)
                 hungry = 1;
+            else
+                hungry = h;
     }
 
     public void SetThirst(double t)
     {
-        thirst = t;
             if(t<0)
                 thirst = 0;
             else if (t>1)
                 thirst = 1;
+            else 
+                thirst = t;
     }
 
     public void SetHappiness(double ha)
     {
-        happiness = ha;
             if(ha<0)
              happiness = 0;
             else if (ha>1)      
              happiness = 1;
+            else
+            happiness = ha;
 
     }
     //------------------------------------------------------------------------------------------------------
