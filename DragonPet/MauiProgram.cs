@@ -16,6 +16,11 @@ public static class MauiProgram
 				fonts.AddFont("Font Awesome 6 Brands-Regular-400.otf","Font1");
                 fonts.AddFont("Font Awesome 6 Free-Solid-900.otf","Font2");
                 fonts.AddFont("Font Awesome 6 Brands-Regular-400.otf","Font3");
+                fonts.AddFont("Food.ttf","Food");
+                fonts.AddFont("Arrows.ttf","Arrows");
+
+
+
 			});
 
 #if DEBUG
